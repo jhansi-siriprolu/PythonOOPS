@@ -1,0 +1,91 @@
+Advanced Python Programming and software fudamentals
+
+1. Variable and function names sould be camelCase or snake case with _
+2. Function names should be verbs if they are modifying data
+		Functon names should be nouns if data is not midfied
+3. Numbers shoudl be named as CAPITAL variables signifying constants
+4. Variable and functionnames should interprest the meaning
+5. Use Comments only as last choice and minimize if necessary.
+6. Decompose complex task into many small functions and organize - improves readability and debugging
+7. Code formatting -  Code is written once but read several times duing code review, testing and reusing
+		1. Indendation
+		2. Charecter spaning
+		3. differiating logical blocks
+		
+	Code style: Uniformity over perfection
+
+	Solution: Black
+	******jupyter Notebook Code formatting *************
+	pip install nb_black
+	%load_ext nb_black
+	%load_ext lab_black
+	
+	*******Python files code formatting**********
+	pip install black
+	black main.py
+	or black . (for all python files code formatting in current directory)
+	
+8. DOCSTRINGS - defines function specifications
+contained in triple quotes
+	Must inlcude 1. Description of function in 1/2 lines
+				 2. Parameter:
+					Param1(type): Description
+					Param2(type): Description
+					Param3(type): Description
+				 3. Return(type): Description of what is returned by function
+				 
+
+9. Testing and Debugging : Code is already written and testing for malfuntion
+	Type of bugs: 
+	a. overt(visible) Covert(invisible)
+	b. persistent(easy to reproduce) itermittent(only happens for special input cases)
+	
+	i. Covert and intermittent are hard to find: 
+		Contraints and Assuptions provides a firm structure for testing these
+	ii. overt persistent or intermittent can be solved by defensive programming
+			
+
+	Type of test cases:
+	Random tests
+	Blackbox testing : test using docstrings
+	GLass box testing : Check for boundaries or all possible paths/partitions still requires exhaustive testing
+	Guidelines for test case:
+		Branches check for if-else
+		Loops: Check for break and continue
+		
+		
+10. Defensive programming:
+	a: Python Typing: 
+		Example: def fun_name(param:int,param2:float) -> float
+		Python typing - just promotes
+		mypy along with pyton typing clearly shows the error
+		
+	b. Assertions: Enforcing the assumptions
+		Example: assert condition , "if condiion is met do nothing else return this string"
+		assert value1 != value2, "The values should not be equal"
+		assert divisor!=0, "divisor cannot be zero"
+		assert type(l1) == list and type(x) in (int,float), "The input is not valid"
+		
+		Asserions can only signal unexpected results but not circumvent them
+		
+11. Excetion handling
+			------------Sucess-------Try:(Error)-----------
+			|										       except:
+		Else:-------------------------------------------------
+									|
+									V
+						Finally: wind up code
+		If try block runs successfully-- ELSE block runs as default code
+		Try block fails/something unexpected happens -- Run EXCEPT block code(Signalling the error)
+		Finally block always runs if defined
+		
+		**** Exceptions and Errors: https://docs.python.org/3/tutorial/errors.html
+		**** Builtin Exceptions: https://docs.python.org/3/library/exceptions.html#bltin-exceptions
+		
+12. Python Standard Library: https://docs.python.org/3/library/index.html
+	Important and Basic: Math
+						 Random
+						 OS
+						 Datetime
+
+				

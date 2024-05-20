@@ -1,0 +1,33 @@
+** Create simple class and constructor of a class
+How to define objects
+How to access attributes inside and outside of the class
+
+Lesson 2:
+
+How to add methods to our class 
+Backaccount - withdrawal, disposit
+
+Lesson 3:
+
+Printing objects
+__str__ -- Implicitly called when printing an object like print(acc1)
+This method returns string description of an object.
+
+Lesson 4:
+
+Using a class inside a class and how objects interact with each other.
+
+
+Class inheritence:
+
+A---B,c ---D
+
+Method resolution order -- going from left to right in class definition and follows breadth first search
+
+When a class is inherited from multiple clasess, methods and attributes will search in MRO following Breadth first search
+
+
+Abstraction:
+For a subclass to have its own implementation of a method.
+Create a abstract method in parent class, so that you cannot create a subclass object without defining the method
+
