@@ -3,7 +3,7 @@ Advanced Python Programming and software fudamentals
 1. Variable and function names sould be camelCase or snake case with _
 2. Function names should be verbs if they are modifying data
 		Functon names should be nouns if data is not midfied
-3. Numbers shoudl be named as CAPITAL variables signifying constants
+3. Numbers should be named as CAPITAL variables signifying constants
 4. Variable and functionnames should interprest the meaning
 5. Use Comments only as last choice and minimize if necessary.
 6. Decompose complex task into many small functions and organize - improves readability and debugging
